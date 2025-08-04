@@ -20,3 +20,10 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Ignore Python bytecode files
+__pycache__/
+env/
+
+# Ignore environment variables file
+.env
