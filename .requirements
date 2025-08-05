@@ -1,0 +1,5 @@
+djangorestframework==3.16.0
+pip-chill==1.0.3
+pycodestyle==2.14.0
+pymysql==1.1.1
+python-dotenv==1.1.1
