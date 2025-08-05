@@ -7,7 +7,7 @@ class TourImage(models.Model):
     tour = models.ForeignKey(
         Tour, on_delete=models.CASCADE, related_name='images'
     )
-    image_url = models.URLField(max_length=500)
+    image = models.ImageField(upload_to='tours/', blank=True, null=True)
     alt_text = models.CharField(max_length=255, blank=True, null=True)
     sort_order = models.IntegerField(default=0)
     created_at = models.DateTimeField(default=timezone.now)

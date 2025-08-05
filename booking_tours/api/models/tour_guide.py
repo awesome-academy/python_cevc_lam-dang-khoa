@@ -8,9 +8,8 @@ class TourGuide(models.Model):
     phone_number = models.TextField(blank=True, null=True)
     specialties = models.TextField(blank=True, null=True)
     languages = models.TextField(blank=True, null=True)
-    experience_years = models.IntegerField(default=0)
+    experience_years = models.PositiveIntegerField(default=0)
     license_number = models.CharField(max_length=100, blank=True, null=True)
-    total_trips = models.IntegerField(default=0)
     bio = models.TextField(blank=True, null=True)
     status = models.CharField(
         max_length=10, choices=TourGuideStatus.CHOICES,

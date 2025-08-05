@@ -5,7 +5,7 @@ from django.utils import timezone
 class Category(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
-    image = models.URLField(max_length=500, blank=True, null=True)
+    image = models.ImageField(upload_to='categories/', blank=True, null=True)
     sort_order = models.IntegerField(default=0)
     is_public = models.BooleanField(default=True)
     created_at = models.DateTimeField(default=timezone.now)

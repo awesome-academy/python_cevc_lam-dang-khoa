@@ -22,7 +22,6 @@ class Review(models.Model):
     )
     title = models.CharField(max_length=255)
     content = models.TextField()
-    images = models.JSONField(blank=True, null=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 

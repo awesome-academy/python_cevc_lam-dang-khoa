@@ -10,5 +10,6 @@ from .booking import Booking
 from .payment import Payment
 from .user_bank_account import UserBankAccount
 from .review import Review
+from .review_image import ReviewImage
 from .review_like import ReviewLike
 from .comment import Comment

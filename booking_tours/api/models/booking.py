@@ -16,11 +16,11 @@ class Booking(models.Model):
     trip = models.ForeignKey(
         TourTrip, on_delete=models.CASCADE, related_name='bookings'
     )
-    adult_count = models.IntegerField(default=1)
-    child_count = models.IntegerField(default=0)
-    single_supplement_count = models.IntegerField(default=0)
-    double_supplement_count = models.IntegerField(default=0)
-    family_supplement_count = models.IntegerField(default=0)
+    adult_count = models.PositiveIntegerField(default=1)
+    child_count = models.PositiveIntegerField(default=0)
+    single_supplement_count = models.PositiveIntegerField(default=0)
+    double_supplement_count = models.PositiveIntegerField(default=0)
+    family_supplement_count = models.PositiveIntegerField(default=0)
     total_amount = models.DecimalField(
         max_digits=12, decimal_places=2, default=0
     )
